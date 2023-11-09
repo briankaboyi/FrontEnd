@@ -1,0 +1,40 @@
+:root {
+  --light-red: hsl(0, 100%, 67%);
+  --orangey-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+}
+@font-face{
+    font-family:Hanken Grotesk;
+    src: url('https://fonts.google.com/specimen/Hanken+Grotesk');
+}
+#results-card, body,#container,#summary-card{
+    display: flex;
+}
+body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: Hanken Grotesk;
+  
+  justify-content: center;
+  align-items: center;
+}
+#container {
+  max-width: 1440px;
+  border: 1px solid red;
+
+}
+#results-card, #summary-card{
+    border: 1px solid red;
+    flex-basis: 50%;
+    flex-direction: column;
+
+}
+#results-card{
+    align-items: center;
+}
+#results-card h1{
+font-size: 16px;
+}
