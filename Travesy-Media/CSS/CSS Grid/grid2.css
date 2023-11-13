@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav section aside"
+    "nav footer footer";
+  height: 100vh;
+  grid-template-rows: 1fr 4fr 1fr;
+  grid-template-columns: 1fr 4fr 1fr;
+}
+header,
+nav,
+section,
+aside,
+footer {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: slateblue;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 20px;
+}
+
+header {
+  grid-area: header;
+}
+nav {
+  grid-area: nav;
+}
+section {
+  grid-area: section;
+}
+aside {
+  grid-area: aside;
+}
+footer {
+  grid-area: footer;
+}
